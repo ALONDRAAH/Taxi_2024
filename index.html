@@ -157,22 +157,40 @@
         <form class="formulario">
           <fieldset>
             <legend>Completa la información requerida</legend>
-
             <div class="contenedor_campos">
               <div class="campo">
                 <label for="txtnombre">Nombre Completo:</label>
-                <input class="input-texto" type="text" name="txtnombre"
-                id="txtnombre"
+                <input
+                  class="input-texto"
+                  type="text"
+                  name="txtnombre"
+                  id="txtnombre"
+                  required
+                  minlength="0"
+                  maxlength="30"
+                />
               </div>
               <div class="campo">
-                <label for="txttelefono">Telefono:</label>
-                <input class="input-texto" type="tel" name="txttelefono"
-                id="txttelefono"
+                <label for="txttelefono">Teléfono:</label>
+                <input
+                  class="input-texto"
+                  type="tel"
+                  name="txttelefono"
+                  id="txttelefono"
+                  required
+                  min="0"
+                  max="15"
+                />
               </div>
               <div class="campo">
                 <label for="txtemail">Email:</label>
-                <input class="input-texto" type="email" name="txtemail"
-                id="txtemail"
+                <input
+                  class="input-texto"
+                  type="email"
+                  name="txtemail"
+                  id="txtemail"
+                  required
+                />
               </div>
               <div class="campo">
                 <label for="txtmensaje">Mensaje:</label>
@@ -181,6 +199,7 @@
                   name="txtmensaje"
                   id="txtmensaje"
                   rows="10"
+                  required
                 ></textarea>
               </div>
             </div>
